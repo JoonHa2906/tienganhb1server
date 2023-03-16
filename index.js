@@ -8,9 +8,6 @@ const app = express();
 // Middleware
 app.use(express.json());
 
-const methodOverride = require('method-override')
-app.use(methodOverride('_method'))
-
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
